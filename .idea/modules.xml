@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/KnowledgeShare.iml" filepath="$PROJECT_DIR$/KnowledgeShare.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ks-api/ks-api.iml" filepath="$PROJECT_DIR$/ks-api/ks-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ks-common/ks-common.iml" filepath="$PROJECT_DIR$/ks-common/ks-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ks-service/ks-service.iml" filepath="$PROJECT_DIR$/ks-service/ks-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ks-web/ks-web.iml" filepath="$PROJECT_DIR$/ks-web/ks-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ks-web-client/ks-web-client.iml" filepath="$PROJECT_DIR$/ks-web-client/ks-web-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ks-web-server/ks-web-server.iml" filepath="$PROJECT_DIR$/ks-web-server/ks-web-server.iml" />
+    </modules>
+  </component>
+</project>
