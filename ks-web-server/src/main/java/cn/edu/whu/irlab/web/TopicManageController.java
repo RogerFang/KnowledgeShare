@@ -50,11 +50,11 @@ public class TopicManageController {
 
     private List<Topic> recursiveParentTopic(Topic topic){
         List<Topic> list = new ArrayList<>();
-        Integer parent = topic.getParent();
+        Integer parent = topic.getParentId();
         while (parent != 0){
             Topic parentTopic = topicService.selectByPrimaryKey(parent);
             list.add(parentTopic);
-            parent = parentTopic.getParent();
+            parent = parentTopic.getParentId();
         }
         return list;
     }

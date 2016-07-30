@@ -2,12 +2,10 @@ package cn.edu.whu.irlab.model;
 
 import java.util.Date;
 
-public class Topic {
+public class GroupCls {
     private Integer id;
 
-    private String name;
-
-    private Integer parentId;
+    private String cls;
 
     private Date createTime;
 
@@ -19,20 +17,12 @@ public class Topic {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getCls() {
+        return cls;
     }
 
-    public void setName(String name) {
-        this.name = name == null ? null : name.trim();
-    }
-
-    public Integer getParentId() {
-        return parentId;
-    }
-
-    public void setParentId(Integer parentId) {
-        this.parentId = parentId;
+    public void setCls(String cls) {
+        this.cls = cls == null ? null : cls.trim();
     }
 
     public Date getCreateTime() {

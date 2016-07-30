@@ -19,5 +19,5 @@ public interface TopicMapper {
 
     int updateByPrimaryKey(Topic record);
 
-    List<Topic> selectTopicByParent(Integer parent);
+    List<Topic> selectTopicByParentId(Integer parent);
 }

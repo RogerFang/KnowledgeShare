@@ -49,11 +49,11 @@ public class TopicServiceImpl implements TopicService {
 
     @Override
     public List<Topic> selectRootTopic() {
-        return topicMapper.selectTopicByParent(0);
+        return topicMapper.selectTopicByParentId(0);
     }
 
     @Override
     public List<Topic> selectChildTopic(Integer parent) {
-        return topicMapper.selectTopicByParent(parent);
+        return topicMapper.selectTopicByParentId(parent);
     }
 }
