@@ -88,7 +88,7 @@
         <!--JAR end-->
 
         <!--PLUGIN start-->
-        <jetty-plugin.version>8.0.0.M3</jetty-plugin.version>
+        <jetty-plugin.version>9.2.18.v20160721</jetty-plugin.version>
         <!--PLUGIN end-->
 
         <!--OTHER start-->
@@ -378,4 +378,29 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <!--jetty-->
+                <plugin>
+                    <groupId>org.eclipse.jetty</groupId>
+                    <artifactId>jetty-maven-plugin</artifactId>
+                    <version>${jetty-plugin.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

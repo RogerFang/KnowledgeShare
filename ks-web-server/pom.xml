@@ -29,23 +29,18 @@
         <plugins>
             <!--jetty-->
             <plugin>
-                <groupId>org.mortbay.jetty</groupId>
+                <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
                 <configuration>
-                    <stopKey>foo</stopKey>
+                    <httpConnector>
+                        <port>${jetty-server-port.version}</port>
+                    </httpConnector>
+                    <stopKey>shutdown</stopKey>
                     <stopPort>9999</stopPort>
-                    <connectors>
-                        <connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
-                            <port>${jetty-server-port.version}</port>
-                        </connector>
-                    </connectors>
-                    <webAppConfig>
-                        <!--访问地址：http://localhost:8080/index.jsp-->
-                        <!--如果不带index.jsp会直接报404，这个一直没找到原因-->
+                    <webApp>
                         <contextPath>${jetty-server-path.version}</contextPath>
-                    </webAppConfig>
-                    <!--scanIntervalSeconds 可选[秒]。在很短的时间间隔内在扫描web应用检查是否有改变，如果发觉有任何改变则自动热部署。默认为0，表示禁用热部署检查。任何一个大于0的数字都将表示启用。-->
-                    <!--<scanIntervalSeconds>60</scanIntervalSeconds>-->
+                    </webApp>
+                    <!--<scanIntervalSeconds>2</scanIntervalSeconds>-->
                 </configuration>
             </plugin>
         </plugins>
